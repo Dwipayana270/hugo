@@ -34,6 +34,8 @@ build:
   - HUGO_ENV=staging
   - HUGO_VERSION=0.79.0
   preview_output_directory: public
+  install_dependencies_command: mkdir themes cd themes git clone https://github.com/kishaningithub/hugo-creative-portfolio-theme.git
+    rm -rf hugo-creative-portfolio-theme/.git
   preview_docker_image: forestryio/hugo:latest
   mount_path: "/srv"
   working_dir: "/srv"
